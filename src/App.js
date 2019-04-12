@@ -13,8 +13,8 @@ class App extends Component {
     
     return (
       <div className="container">
-        <Navbar title="User App 2"/>
-        <Navbar/>
+        <Navbar title="User App"/>
+        {/*<Navbar/>*/}
         <hr/>
         <AddUser/>
         
