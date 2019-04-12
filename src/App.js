@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import Navbar from "./components/Navbar";
-// import User from "./components/User";
+import AddUser from "./components/AddUser";
+
 import Users from "./components/Users";
-// import './App.css';
+import './App.css';
 
 
 
@@ -15,9 +16,9 @@ class App extends Component {
         <Navbar title="User App 2"/>
         <Navbar/>
         <hr/>
+        <AddUser/>
         
 
-        {/*<Users users = {this.state.users} />*/}
         <Users />
 
       </div>
