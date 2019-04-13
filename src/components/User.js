@@ -76,6 +76,7 @@ class User extends Component {
 User.propTypes = {
   name: PropTypes.string.isRequired,
   department: PropTypes.string.isRequired,
-  salary: PropTypes.string.isRequired
+  salary: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired
 }
 export default User;
