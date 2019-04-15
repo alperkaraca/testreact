@@ -16,6 +16,18 @@ class Test extends Component {
         a: 20
     });
   }
+  componentDidUpdate(prevProps, prevState) {
+    console.log("componentDidUpdate");
+  }
+//   shouldComponentUpdate(nextProps, nextState) {
+//     console.log("shouldComponentUpdate");
+//     return true;
+//   }
+  shouldComponentUpdate(nextProps, nextState) {
+    console.log("shouldComponentUpdate");
+    return false;
+   }
+  
   render() {
     console.log("Render");
     return (
