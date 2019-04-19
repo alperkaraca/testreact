@@ -11,6 +11,12 @@
       "name": "Mahmut Troklebadelioğlu",
       "salary": "Karın Tokluğuna...",
       "department": "CEO"
+    },
+    {
+      "name": "Faruk Fallobikoğlu",
+      "department": "Amele",
+      "salary": "35000",
+      "id": "xjf6xWC"
     }
   ]
 }
