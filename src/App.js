@@ -3,7 +3,9 @@ import Navbar from "./components/Navbar";
 import AddUser from "./components/AddUser";
 import Users from "./components/Users";
 // import Test from './components/Test';
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import NotFound from './components/NotFound';
+
+import {BrowserRouter as Router,Route,Switch} from "react-router-dom";
 
 import './App.css';
 
@@ -30,9 +32,13 @@ class App extends Component {
           <Router>
             <Navbar title="User App" />
             <hr />
-            <Route exact path="/" component={Users} />
-            <Route exact path="/add" component={AddUser} />
-            
+
+            <Switch>
+              <Route exact path = "/" component={Users} />
+              <Route exact path = "/add" component={AddUser} />
+              <Route component = {NotFound} />
+            </Switch>
+
           </Router>
         </div>
       </Router>
