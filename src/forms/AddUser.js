@@ -51,6 +51,10 @@ class AddUser extends Component {
 
     dispatch({ type: "ADD_USER", payload:response.data});
     // console.log(newUser);
+
+    // Redirect
+    this.props.history.push("/");
+
   }
   render() {
     const { visible, name, department, salary } = this.state;
