@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import UserConsumer from '../context';
-// import axios from "axios"
+import axios from "axios";
 
 
 class UpdateUser extends Component {
@@ -16,6 +16,20 @@ class UpdateUser extends Component {
       [e.target.name]: e.target.value
     });
   }
+  componentDidMount = async () => {
+    const {id} = this.props.match.params;
+
+    const response = await axios.get(`http://localhost:3004/users/${id}`);
+
+    const {name,salary,department} = response.data;
+
+    this.setState({
+      name,
+      salary,
+      department
+    });
+  }
+
   updateUser = async (dispatch,e) => {
     e.preventDefault();
     // Update User
@@ -76,7 +90,7 @@ class UpdateUser extends Component {
                           onChange={this.changeInput}
                         />
                       </div>
-                      <button className="btn btn-danger btn-block" type="submit">Add User</button>
+                      <button className="btn btn-danger btn-block" type="submit">Update User</button>
 
                     </form>
                   </div>
