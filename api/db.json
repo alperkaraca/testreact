@@ -26,9 +26,15 @@
     },
     {
       "name": "Fikret Özçapuk",
+      "salary": "35000",
       "department": "Padişah Torunu",
-      "salary": "3400",
       "id": "vsHf0ec"
+    },
+    {
+      "name": "Mehmet Fahrenaytoğlu",
+      "department": "Bilişim",
+      "salary": "100",
+      "id": "6-yfmq7"
     }
   ]
 }
