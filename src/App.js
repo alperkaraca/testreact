@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Navbar from "./layout/Navbar";
-import AddUser from "./components/AddUser";
+import AddUser from "./forms/AddUser";
+import UpdateUser from "./forms/UpdateUser";
 import Users from "./components/Users";
 // import Test from './components/Test';
 import NotFound from './pages/NotFound';
@@ -27,6 +28,7 @@ class App extends Component {
               <Route exact path = "/" component={Users} />
               <Route exact path = "/add" component={AddUser} />
               <Route exact path = "/github" component={Contribute} />
+              <Route exact path = "/edit/:id" component={UpdateUser} />
               <Route component = {NotFound} />
             </Switch>
 
